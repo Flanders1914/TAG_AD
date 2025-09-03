@@ -43,6 +43,7 @@ def cora_anomaly_generator(data: Data, n: int, anomaly_type: int, random_seed: i
     .processed_text: List[str], the processed text of nodes
     .anomaly_labels: torch.Tensor, shape: torch.Size([2708]), dtype: torch.int64, the label of anomaly, 0 for normal, 1 for anomaly
     .anomaly_types: List[int], the type of anomaly
+    .updated_x: torch.Tensor, shape: torch.Size([2708, 384]), dtype: torch.float32, the updated text embeddings of nodes
     """
     raw_text = data.raw_text
     node_num = len(raw_text)
@@ -69,6 +70,7 @@ def cora_anomaly_generator(data: Data, n: int, anomaly_type: int, random_seed: i
 
     # encode the text to embeddings
     data = encode_text(data)
+    # The updated embeddings should be stored in data.updated_x
     return data
 
 

@@ -24,5 +24,23 @@ def encode_text(data: Data, model_name: str = "all-MiniLM-L6-v2") -> Data:
     if new_embeddings.shape[0] != data.x.shape[0]:
         raise ValueError("the number of embeddings is not equal to the number of nodes")
     # update the data.x with the new embeddings
-    data.x = torch.tensor(new_embeddings, dtype=torch.float32)
+    data.updated_x = torch.tensor(new_embeddings, dtype=torch.float32)
     return data
+
+def calculate_similarity(data: Data) -> Data:
+    """
+    Calculate the similarity between the original text embeddings and the updated text embeddings
+    """
+    original_embeddings = data.x
+    updated_embeddings = data.updated_x
+    similarity = torch.cosine_similarity(original_embeddings, updated_embeddings, dim=1)
+
+    # split the similarity into normal and anomaly
+    normal_similarity = similarity[data.anomaly_labels == 0]
+    anomaly_similarity = similarity[data.anomaly_labels == 1]
+
+    # calculate the average similarity
+    normal_similarity = normal_similarity.mean()
+    anomaly_similarity = anomaly_similarity.mean()
+
+    return normal_similarity, anomaly_similarity

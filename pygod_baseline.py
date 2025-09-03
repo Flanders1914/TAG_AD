@@ -6,7 +6,7 @@ from pygod.detector import DOMINANT
 from pygod.metric import eval_roc_auc
 from torch_geometric.data import Data
 from anomaly_generator import text_anomaly_generator
-
+from text_encoder import calculate_similarity
 
 def clean_data(data: Data) -> Data:
     """
@@ -66,7 +66,14 @@ if __name__ == "__main__":
     # Add anomaly
     print("Adding anomaly...")
     data = text_anomaly_generator(data, 'cora_fixed_sbert', 200, 1, 42)
+
+    # calculate the similarity
+    normal_similarity, anomaly_similarity = calculate_similarity(data)
+    print(f"Normal similarity: {normal_similarity}, Anomaly similarity: {anomaly_similarity}")
+
+    # update the data with the updated embeddings and anomaly labels
     data.y = data.anomaly_labels.long()
+    data.x = data.updated_x
 
     # show some example
     # Select one node where y == 1 and print its processed text
