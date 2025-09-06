@@ -115,19 +115,31 @@ def main():
         # print all label_names
         print("All label_names:")
         print(data.label_names)
+        print()
         # print all attributes and their types
         print("All attributes and their types:")
         for k in data.keys():
             v = data[k]
             if isinstance(v, list):
                 print(f"{k}: type: {type(v)}, length: {len(v)}, element type: {type(v[0])}")
+                print(f"Example: {v[:5]}")
+                print()
             elif isinstance(v, torch.Tensor):
                 print(f"{k}: type: {type(v)}, shape: {v.shape}, dtype: {v.dtype}")
+                print(f"Example: {v[:5]}")
+                print()
             else:
                 print(f"{k}: type: {type(v)}")
+                print(f"Example: {v}")
+                print()
     else:
         print(f"Dataset {args.dataset} not found")
 
+    # print 5 raw text examples
+    print("10 raw text examples:")
+    for i in range(10):
+        print(data.raw_text[i])
+        print()
 
 if __name__ == "__main__":
     main()

@@ -4,8 +4,7 @@ import torch
 from pygod.detector import AdONE, ANOMALOUS, AnomalyDAE, CoLA, CONAD, DMGD, DOMINANT, DONE, GAAN, GADNR, GAE, GUIDE, OCGNN, ONE, Radar, SCAN
 from pygod.metric import eval_roc_auc, eval_average_precision, eval_f1, eval_precision_at_k, eval_recall_at_k
 from torch_geometric.data import Data
-from anomaly_generator import text_anomaly_generator
-from text_encoder import calculate_similarity
+from anomaly_generator.utils import calculate_similarity
 import argparse
 import random
 import numpy as np
@@ -17,7 +16,7 @@ def _to_float(x):
         return float(x.detach().cpu().item())
     return float(x)
 
-def prepare_data(data_dir: str, dataset_name: str, n: int, anomaly_type: int, random_seed: int) -> Data:
+def prepare_data(data_dir: str, dataset_name: str) -> Data:
     """
     Prepare the data for the baseline experiment
     """
@@ -26,16 +25,12 @@ def prepare_data(data_dir: str, dataset_name: str, n: int, anomaly_type: int, ra
     loader = LLMGNNDataLoader(data_dir=data_dir)
     data = loader.load_dataset(dataset_name)
 
-    # Step 2: add anomaly
-    print("Adding anomaly...")
-    data = text_anomaly_generator(data, dataset_name, n, anomaly_type, random_seed)
-
-    # step 3: validate the anomaly by calculating the similarity
+    # step 2: validate the anomaly by calculating the similarity
     print("Validating anomaly...")
     normal_similarity, anomaly_similarity = calculate_similarity(data)
     print(f"Normal similarity: {normal_similarity}, Anomaly similarity: {anomaly_similarity}")
 
-    # step 4: update the data with the updated embeddings and anomaly labels
+    # step 3: update the data with the updated embeddings and anomaly labels
     data.y = data.anomaly_labels.long()
     data.x = data.updated_x
     print("Unique labels in data.y:", torch.unique(data.y))
@@ -44,7 +39,7 @@ def prepare_data(data_dir: str, dataset_name: str, n: int, anomaly_type: int, ra
     assert data.y.dim() == 1 and data.y.size(0) == data.x.size(0), \
         f"y shape mismatch: {data.y.shape} vs num_nodes={data.x.size(0)}"
 
-    # step 5: show some example
+    # step 4: show some example
     # Select two nodes where y == 1 and print its processed text
     anomaly_indices = (data.y == 1).nonzero(as_tuple=True)[0]
     print(f"Number of nodes with y == 1: {len(anomaly_indices)}")
@@ -58,7 +53,7 @@ def prepare_data(data_dir: str, dataset_name: str, n: int, anomaly_type: int, ra
     else:
         print("Less than 2 nodes with y == 1 found.")
 
-    # step 6: clean the data
+    # step 5: clean the data
     print("Cleaning data...")
     data = clean_data(data)
     print("Data preparation completed")
@@ -239,29 +234,26 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', type=str, default='data/raw')
-    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert')
-    parser.add_argument('--n', type=int, default=200)
-    parser.add_argument('--anomaly_type', type=int, default=1)
+    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert_2_1')
     parser.add_argument('--random_seed', type=int, default=42)
     parser.add_argument('--experiment_num', type=int, default=20)
     parser.add_argument('--output_file', type=str, default='results.json')
+    parser.add_argument('--k', type=int, default=5, help='Number of top-k anomalies for precision and recall calculation')
     args = parser.parse_args()
     
     # prepare the data
-    data = prepare_data(args.data_dir, args.dataset_name, args.n, args.anomaly_type, args.random_seed)
+    data = prepare_data(args.data_dir, args.dataset_name)
 
     # run the baseline experiment for multiple times
     results = []
     for i in range(args.experiment_num):
         print(f"Running experiment {i+1}...")
-        result = baseline_experiment(data, args.n, args.random_seed+i)
+        result = baseline_experiment(data, args.k, args.random_seed+i)
         results.append(result)
 
     # analyze the results
     final_result = {
         'dataset_name': args.dataset_name,
-        'anomaly_type': args.anomaly_type,
-        'anomaly_num': args.n,
     }
     for key in results[0].keys():
        if key == 'random_seed':
