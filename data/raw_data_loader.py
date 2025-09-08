@@ -16,6 +16,7 @@ import torch
 from typing import Dict, List
 from torch_geometric.data import Data
 import argparse
+from .label_map import map_label
 
 class LLMGNNDataLoader:
     """
@@ -44,7 +45,7 @@ class LLMGNNDataLoader:
                 datasets.append(dataset_name)
         return datasets
     
-    def load_dataset(self, dataset_name: str) -> Data:
+    def load_dataset(self, dataset_name: str, is_map_label: bool = True) -> Data:
         """
         Load a specific dataset.
         
@@ -70,6 +71,9 @@ class LLMGNNDataLoader:
         try:
             print(f"Loading dataset from {file_path}")
             data = torch.load(file_path, weights_only=False)
+            # map the label
+            if is_map_label:
+                data = map_label(data, dataset_name)
             
             if not isinstance(data, Data):
                 raise RuntimeError(f"Expected torch_geometric.data.Data object, got {type(data)}")
@@ -138,7 +142,7 @@ def main():
     # print 5 raw text examples
     print("10 raw text examples:")
     for i in range(10):
-        print(data.raw_text[i])
+        print(data.raw_texts[i])
         print()
 
 if __name__ == "__main__":

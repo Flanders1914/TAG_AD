@@ -1,4 +1,5 @@
 # use pygod framework to detect anomaly
+# python pygod_baseline.py --dataset_name cora_fixed_sbert_4_100 --output_file result/cora_fixed_sbert_4_100.json
 from data.raw_data_loader import LLMGNNDataLoader
 import torch
 from pygod.detector import AdONE, ANOMALOUS, AnomalyDAE, CoLA, CONAD, DMGD, DOMINANT, DONE, GAAN, GADNR, GAE, GUIDE, OCGNN, ONE, Radar, SCAN
@@ -9,6 +10,7 @@ import argparse
 import random
 import numpy as np
 import json
+import os
 
 
 def _to_float(x):
@@ -23,7 +25,7 @@ def prepare_data(data_dir: str, dataset_name: str) -> Data:
     # Step 1: load the local data
     print("Loading data...")
     loader = LLMGNNDataLoader(data_dir=data_dir)
-    data = loader.load_dataset(dataset_name)
+    data = loader.load_dataset(dataset_name, is_map_label=False)
 
     # step 2: validate the anomaly by calculating the similarity
     print("Validating anomaly...")
@@ -98,7 +100,7 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
     result = {
         'random_seed': random_seed
     }
-
+    GPU = 0
     # random seed
     random.seed(random_seed)
     torch.manual_seed(random_seed)
@@ -110,31 +112,31 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
 
     # AdONE
     print("Running AdONE...")
-    detector = AdONE(gpu=0)
+    detector = AdONE(gpu=GPU)
     result['AdONE'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # ANOMALOUS
     print("Running ANOMALOUS...")
-    detector = ANOMALOUS(gpu=0)
+    detector = ANOMALOUS(gpu=GPU)
     result['ANOMALOUS'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # AnomalyDAE
     print("Running AnomalyDAE...")
-    detector = AnomalyDAE(gpu=0)
+    detector = AnomalyDAE(gpu=GPU)
     result['AnomalyDAE'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # CoLA
     print("Running CoLA...")
-    detector = CoLA(gpu=0)
+    detector = CoLA(gpu=GPU)
     result['CoLA'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # CONAD
     print("Running CONAD...")
-    detector = CONAD(gpu=0)
+    detector = CONAD(gpu=GPU)
     result['CONAD'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
@@ -146,13 +148,13 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
 
     # DOMINANT
     print("Running DOMINANT...")
-    detector = DOMINANT(gpu=0)
+    detector = DOMINANT(gpu=GPU)
     result['DOMINANT'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # DONE
     print("Running DONE...")
-    detector = DONE(gpu=0)
+    detector = DONE(gpu=GPU)
     result['DONE'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
@@ -170,7 +172,7 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
 
     # GAE
     print("Running GAE...")
-    detector = GAE(gpu=0)
+    detector = GAE(gpu=GPU)
     result['GAE'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
@@ -182,19 +184,19 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
 
     # OCGNN
     print("Running OCGNN...")
-    detector = OCGNN(gpu=0)
+    detector = OCGNN(gpu=GPU)
     result['OCGNN'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
     # ONE
     print("Running ONE...")
-    detector = ONE(gpu=0)
+    detector = ONE(gpu=GPU)
     result['ONE'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
     
     # Radar
     print("Running Radar...")
-    detector = Radar(gpu=0)
+    detector = Radar(gpu=GPU)
     result['Radar'] = train_and_evaluate(data.clone(), detector, k)
     torch.cuda.empty_cache()
 
@@ -233,12 +235,12 @@ def train_and_evaluate(data, detector, k: int) -> dict:
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='data/raw')
-    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert_2_1')
+    parser.add_argument('--data_dir', type=str, default='data/generated')
+    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert_1_100')
     parser.add_argument('--random_seed', type=int, default=42)
-    parser.add_argument('--experiment_num', type=int, default=20)
+    parser.add_argument('--experiment_num', type=int, default=1)
     parser.add_argument('--output_file', type=str, default='results.json')
-    parser.add_argument('--k', type=int, default=5, help='Number of top-k anomalies for precision and recall calculation')
+    parser.add_argument('--k', type=int, default=20, help='Number of top-k anomalies for precision and recall calculation')
     args = parser.parse_args()
     
     # prepare the data
@@ -294,5 +296,8 @@ if __name__ == "__main__":
     final_result["experiment_result"] = results
     
     # save the results
+    output_dir = os.path.dirname(args.output_file)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir)
     with open(args.output_file, 'w') as f:
         json.dump(final_result, f, indent=4)

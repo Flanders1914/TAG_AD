@@ -1,14 +1,15 @@
 # LLM-Generated Contextual anomaly generation
-
+import random
 import torch
 from torch_geometric.data import Data
 from torch_geometric.utils import k_hop_subgraph
 from .openai_query import send_query_to_openai
 from .anomaly_list import ANOMALY_TYPE_LIST
-from .utils import encode_text
+from .utils import encode_text, count_label_occurrence
 from typing import List
-from .prompts import SYSTEM_PROMPT, USER_PROMPT_CORA
+from .prompts import SYSTEM_PROMPT, USER_PROMPT_CORA, USER_PROMPT_CITESEER, USER_PROMPT_PUBMED, USER_PROMPT_ARXIV
 from collections import defaultdict
+from typing import Dict
 
 # ------------- PROMPT -------------
 
@@ -19,34 +20,35 @@ def llm_generated_contextual_anomaly_generator(data: Data, dataset_name: str, n:
     if ANOMALY_TYPE_LIST[anomaly_type] != "LLM-Generated Contextual Anomaly":
         raise ValueError(f"Invalid anomaly type: {anomaly_type}")
     if "cora" in dataset_name.lower():
-        data = cora_llm_generated_contextual_anomaly_generator(data, n, anomaly_type, random_seed, k_neighbors)
+        user_prompt = USER_PROMPT_CORA
+    elif "citeseer" in dataset_name.lower():
+        user_prompt = USER_PROMPT_CITESEER
+    elif "pubmed" in dataset_name.lower():
+        user_prompt = USER_PROMPT_PUBMED
+    elif "arxiv" in dataset_name.lower():
+        user_prompt = USER_PROMPT_ARXIV
     else:
         raise ValueError(f"Dataset name: {dataset_name} is not implemented")
-    return data
+    return llm_anomaly_generation_pipeline(data, n, anomaly_type, random_seed, k_neighbors, user_prompt, SYSTEM_PROMPT)
 
-def cora_llm_generated_contextual_anomaly_generator(data: Data, n: int, anomaly_type: int, random_seed: int, k_neighbors: int) -> Data:
+# ------------ Pipeline ------------------
+def llm_anomaly_generation_pipeline(data: Data, n: int, anomaly_type: int, random_seed: int, k_neighbors: int, user_prompt: str, system_prompt: str) -> Data:
     """
-    Generate LLM-Generated Contextual anomaly for cora dataset
-    cora has the following attributes:
-    .raw_texts: List[str] the original text of nodes
-    .category_names: List[str] the category of nodes
-    .label_names: List[str], 7 labels: ['Rule_Learning', 'Neural_Networks', 'Case_Based', 'Genetic_Algorithms', 'Theory', 'Reinforcement_Learning', 'Probabilistic_Methods']
-    .x: torch.Tensor, shape: torch.Size([2708, 384]), dtype: torch.float32
-    .raw_text: List[str], the original text of nodes
-    .val_masks: List[torch.Tensor], length: 10, element type: <class 'torch.Tensor'>
-    .edge_index: torch.Tensor, shape: torch.Size([2, 10858]), dtype: torch.int64
-    .train_masks: List[torch.Tensor], length: 10, element type: <class 'torch.Tensor'>
-    .y: torch.Tensor, shape: torch.Size([2708]), dtype: torch.int64
-    .test_masks: List[torch.Tensor], length: 10, element type: <class 'torch.Tensor'>
+    The pipeline to generate LLM-Generated Contextual anomaly
+    data must have the following attributes:
+    .raw_texts: List[str] the original text attribute of nodes
+    .category_names: List[str] the category/label of each node
+    .label_names: List[str], all possible labels/categories
+    .edge_index: torch.Tensor, shape: torch.Size([2, number of edges]), dtype: torch.int64
 
     Optional:
-    .processed_text: List[str], the processed text of nodes
-    .anomaly_labels: torch.Tensor, shape: torch.Size([2708]), dtype: torch.int64, the label of anomaly, 0 for normal, 1 for anomaly
+    .processed_text: List[str], the processed text attribute of nodes
+    .anomaly_labels: torch.Tensor, shape: torch.Size([number of nodes]), dtype: torch.int64, the label of anomaly, 0 for normal, 1 for anomaly
     .anomaly_types: List[int], the type of anomaly
-    .updated_x: torch.Tensor, shape: torch.Size([2708, 384]), dtype: torch.float32, the updated text embeddings of nodes
+    .updated_x: torch.Tensor, shape: torch.Size([number of nodes, embedding_dim]), dtype: torch.float32, the updated text embeddings of nodes
     """
-    raw_text = data.raw_text
-    node_num = len(raw_text)
+    raw_texts = data.raw_texts
+    node_num = len(raw_texts)
     # get the index of normal nodes
     if hasattr(data, "anomaly_labels"):
         normal_idxs = (data.anomaly_labels == 0).nonzero(as_tuple=True)[0]
@@ -60,14 +62,14 @@ def cora_llm_generated_contextual_anomaly_generator(data: Data, n: int, anomaly_
     perm = torch.randperm(normal_idxs.numel(), generator=gen, device=normal_idxs.device)
     selected_idxs = normal_idxs[perm[:n]]
     # generate LLM-Generated Contextual anomaly
-    data = llm_generated_contextual_anomaly(data, selected_idxs, anomaly_type, k_neighbors)
+    data = llm_generated_contextual_anomaly(data, selected_idxs, anomaly_type, k_neighbors, user_prompt, system_prompt, random_seed)
     # encode the text to embeddings
     data = encode_text(data)
     # The updated embeddings should be stored in data.updated_x
     return data
 
 # LLM-Generated Contextual anomaly generation
-def llm_generated_contextual_anomaly(data: Data, selected_idxs: torch.Tensor, anomaly_type: int, k_neighbors: int) -> Data:
+def llm_generated_contextual_anomaly(data: Data, selected_idxs: torch.Tensor, anomaly_type: int, k_neighbors: int, user_prompt: str, system_prompt: str, random_seed: int) -> Data:
     """
     Generate LLM-Generated Contextual anomaly
     replace the original text with the text generated by LLM
@@ -75,19 +77,23 @@ def llm_generated_contextual_anomaly(data: Data, selected_idxs: torch.Tensor, an
     print("Generating LLM-Generated Contextual anomaly...")
 
     # step 1: initialize the processed text, anomaly labels, and anomaly types
-    processed_text = data.raw_text.copy() if not hasattr(data, "processed_text") else data.processed_text.copy()
+    processed_text = data.raw_texts.copy() if not hasattr(data, "processed_text") else data.processed_text.copy()
     anomaly_labels = torch.zeros(len(processed_text), dtype=torch.int64, device=data.x.device) if not hasattr(data, "anomaly_labels") else data.anomaly_labels.clone()
     anomaly_types = [0] * len(processed_text) if not hasattr(data, "anomaly_types") else data.anomaly_types.copy()
 
     # step 2: replace the original text with the text generated by LLM
+    count = 0
     for idx in selected_idxs.tolist():
         print(f"Generating LLM-Generated Contextual anomaly for node {idx}...")
-        print(f"Original text: {data.raw_text[idx]}")
-        LLM_text = generate_LLM_text(data, idx, k_neighbors)
-        print(f"\nLLM-Generated text: {LLM_text}")
+        LLM_text = generate_LLM_text(data, idx, k_neighbors, user_prompt, system_prompt, random_seed)
         processed_text[idx] = LLM_text
         anomaly_labels[idx] = 1
         anomaly_types[idx] = anomaly_type
+        count += 1
+        if count % 100 == 0:
+            print("--------------------------------")
+            print(f"Generated {count} nodes")
+            print("--------------------------------")
 
     # step 3: update the data
     data.processed_text = processed_text
@@ -97,7 +103,7 @@ def llm_generated_contextual_anomaly(data: Data, selected_idxs: torch.Tensor, an
     return data
 
 # generate the text generated by LLM
-def generate_LLM_text(data: Data, idx: int, k_neighbors: int) -> str:
+def generate_LLM_text(data: Data, idx: int, k_neighbors: int, user_prompt: str, system_prompt: str, random_seed: int) -> str:
     """
     Generate the text generated by LLM
     """
@@ -123,17 +129,20 @@ def generate_LLM_text(data: Data, idx: int, k_neighbors: int) -> str:
         if len(label_names) == 1:
             break
         
-    # step 4: get the selected label name
-    selected_label_name = label_names[0]
+    # step 4: Randomly select the label from the remaining label names based on the remaining label names' occurrence
+    label_occurrence: Dict[str, int] = count_label_occurrence(data)
+    # keep only the label in label_names
+    label_occurrence = {label: occurrence for label, occurrence in label_occurrence.items() if label in label_names}
+    # randomly select the label from the remaining label names based on the remaining label names' occurrence
+    rng = random.Random(random_seed+idx)
+    selected_label_name = rng.choices(list(label_occurrence.keys()), weights=list(label_occurrence.values()), k=1)[0]
 
     # step 5: formulate the prompt and send the query to OpenAI
     node_label_name = data.category_names[idx]
-    raw_text = data.raw_text[idx]
-    system_prompt = SYSTEM_PROMPT
-    user_prompt = USER_PROMPT_CORA.format(label_name=node_label_name, designated_label=selected_label_name, raw_text=raw_text)
+    raw_texts = data.raw_texts[idx]
+    user_prompt = user_prompt.format(label_name=node_label_name, designated_label=selected_label_name, raw_text=raw_texts)
     print(f"\nUser prompt: {user_prompt}")
     return send_query_to_openai(user_prompt=user_prompt, system_prompt=system_prompt)
-
 
 def get_k_hop_neighbors(data: Data, idx: int, k: int)-> List[int]:
     """

@@ -50,6 +50,7 @@ def send_query_to_openai(user_prompt, system_prompt) -> str:
         result = response.json()
         message_content = result["choices"][0]["message"]["content"]
         print(f"API response content: {message_content}")
+        print()
         return message_content
     except (KeyError, IndexError) as e:
         raise RuntimeError(f"Unexpected API response format: {e}")

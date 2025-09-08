@@ -46,7 +46,7 @@ We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMG
 | CORA          | 2,708    | 5,429    | Given the title and abstract, predict the category of this paper | Rule Learning, Neural Networks, Case-Based, Genetic Algorithms, Theory, Reinforcement Learning, Probabilistic Methods |
 | CITESEER      | 3,186    | 4,277    | Given the title and abstract, predict the category of this paper | Agents, Machine Learning, Information Retrieval, Database, Human Computer Interaction, Artificial Intelligence |
 | PUBMED        | 19,717   | 44,335   | Given the title and abstract, predict the category of this paper | Diabetes Mellitus Experimental, Diabetes Mellitus Type 1, Diabetes Mellitus Type 2 |
-| WIKICS        | 11,701   | 215,863  | Given the contents of the Wikipedia article, predict the category of this article | Computational linguistics, Databases, Operating systems, Computer architecture, Computer security, Internet protocol, Computer file systems, Distributed computing architecture, Web technology, Programming language topics |
+| OGBN-Arxiv    | 169,343  | 2,315,598| Given the title and abstract, predict the category of this paper |40 classes from Arxiv CS |
 
 ### Dataset Setup
 
@@ -55,12 +55,15 @@ We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMG
    # Download small_data.zip from the LLMGNN repository
    # Place it in the ./data folder
    ```
-
 2. **Extract Data**
    ```bash
    unzip ./data/small_data.zip -d ./data/raw
    ```
-
+3. **Download Wiki-CS**
+   ```bash
+   cd ./data/raw
+   git clone https://github.com/pmernyei/wiki-cs-dataset.git
+   ```
 3. **Verify Installation**
    ```bash
    python data/raw_data_loader.py --dataset cora_fixed_sbert
@@ -69,28 +72,10 @@ We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMG
 ## Usage
 
 ### 1. Generate Anomalies
+Modify make_anomaly.py
 
-#### Dummy Anomaly Generation
 ```bash
 python make_anomaly.py
-```
-
-#### LLM-Generated Contextual Anomaly
-Modify `make_anomaly.py` to use the LLM-based generator:
-```python
-from anomaly_generator import llm_generated_contextual_anomaly_generator
-from data.raw_data_loader import LLMGNNDataLoader
-
-loader = LLMGNNDataLoader(data_dir="data/raw")
-data = loader.load_dataset("cora_fixed_sbert")
-data = llm_generated_contextual_anomaly_generator(
-    data=data,
-    dataset_name="cora_fixed_sbert",
-    n=1,
-    anomaly_type=2,  # LLM-Generated Contextual Anomaly
-    random_seed=42,
-    k_neighbors=2
-)
 ```
 
 ### 2. Run Baseline Experiments

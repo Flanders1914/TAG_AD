@@ -4,6 +4,7 @@ import random
 from torch_geometric.data import Data
 from sentence_transformers import SentenceTransformer
 import torch
+from typing import Dict
 
 # ------------- count and sample -------------
 
@@ -31,6 +32,18 @@ def fit_unigram_and_lengths(raw_text: List[str]) -> Tuple[List[str], List[float]
     unigram_list = [unigram for unigram, _ in items]
     return unigram_list, unigram_probs, lengths
 
+# label occurrence counting
+def count_label_occurrence(data: Data) -> Dict[str, int]:
+    """
+    Count the label occurrence
+    """
+    # set up a dictionary based on data.label_names
+    label_counter = {label: 0 for label in data.label_names}
+    # count the label distribution based on data.category_names
+    for label in data.category_names:
+        label_counter[label] += 1
+    return label_counter
+
 # sample the length of the text randomly
 def sample_length(lengths: List[int], rng: random.Random) -> int:
     """
@@ -47,6 +60,13 @@ def sample_text(unigram_list: List[str], unigram_probs: List[float], length: int
     return text
 
 # ------------- text encoder -------------
+class TextEncoder:
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+        self.model = SentenceTransformer(model_name)
+
+    def encode_list(self, texts: List[str]) -> torch.Tensor:
+        embeddings = self.model.encode(sentences=texts, precision="float32")
+        return torch.tensor(embeddings, dtype=torch.float32)
 
 def encode_text(data: Data, model_name: str = "all-MiniLM-L6-v2") -> Data:
     """
