@@ -22,6 +22,8 @@ def dummy_anomaly_generator(data: Data, dataset_name: str, n: int, anomaly_type:
         return dummy_anomaly_generation_pipeline(data, n, anomaly_type, random_seed)
     elif "arxiv" in dataset_name.lower():
         return dummy_anomaly_generation_pipeline(data, n, anomaly_type, random_seed)
+    elif "wikics" in dataset_name.lower():
+        return dummy_anomaly_generation_pipeline(data, n, anomaly_type, random_seed)
     else:
         raise ValueError(f"Dataset name: {dataset_name} is not implemented")
 

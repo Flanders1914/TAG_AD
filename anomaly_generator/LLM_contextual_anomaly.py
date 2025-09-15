@@ -3,11 +3,14 @@ import random
 import torch
 from torch_geometric.data import Data
 from torch_geometric.utils import k_hop_subgraph
-from .openai_query import send_query_to_openai
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from openai_query import send_query_to_openai
 from .anomaly_list import ANOMALY_TYPE_LIST
 from .utils import encode_text, count_label_occurrence
 from typing import List
-from .prompts import SYSTEM_PROMPT, USER_PROMPT_CORA, USER_PROMPT_CITESEER, USER_PROMPT_PUBMED, USER_PROMPT_ARXIV
+from .prompts import SYSTEM_PROMPT, USER_PROMPT_CORA, USER_PROMPT_CITESEER, USER_PROMPT_PUBMED, USER_PROMPT_ARXIV, USER_PROMPT_WIKICS
 from collections import defaultdict
 from typing import Dict
 
@@ -27,6 +30,8 @@ def llm_generated_contextual_anomaly_generator(data: Data, dataset_name: str, n:
         user_prompt = USER_PROMPT_PUBMED
     elif "arxiv" in dataset_name.lower():
         user_prompt = USER_PROMPT_ARXIV
+    elif "wikics" in dataset_name.lower():
+        user_prompt = USER_PROMPT_WIKICS
     else:
         raise ValueError(f"Dataset name: {dataset_name} is not implemented")
     return llm_anomaly_generation_pipeline(data, n, anomaly_type, random_seed, k_neighbors, user_prompt, SYSTEM_PROMPT)
@@ -141,6 +146,7 @@ def generate_LLM_text(data: Data, idx: int, k_neighbors: int, user_prompt: str, 
     node_label_name = data.category_names[idx]
     raw_texts = data.raw_texts[idx]
     user_prompt = user_prompt.format(label_name=node_label_name, designated_label=selected_label_name, raw_text=raw_texts)
+    print("="*100)
     print(f"\nUser prompt: {user_prompt}")
     return send_query_to_openai(user_prompt=user_prompt, system_prompt=system_prompt)
 

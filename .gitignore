@@ -215,3 +215,9 @@ config.yaml
 
 # test
 test_bond.py
+
+# analysis
+count_node_neighbors.py
+
+# gitignore
+.gitignore

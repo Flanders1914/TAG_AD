@@ -23,6 +23,8 @@ def global_anomaly_generator(data: Data, dataset_name: str, n: int, outliner_tex
         return global_anomaly_generation_pipeline(data, n, anomaly_type, outliner_texts, random_seed)
     elif "arxiv" in dataset_name.lower():
         return global_anomaly_generation_pipeline(data, n, anomaly_type, outliner_texts, random_seed)
+    elif "wikics" in dataset_name.lower():
+        return global_anomaly_generation_pipeline(data, n, anomaly_type, outliner_texts, random_seed)
     else:
         raise ValueError(f"Dataset name: {dataset_name} is not implemented")
 

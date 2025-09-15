@@ -37,7 +37,7 @@ cd TAG_AD
 
 ## Datasets
 
-We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMGNN/tree/master):
+We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMGNN/tree/master), and wiki-cs dataset
 
 ### Dataset Statistics
 
@@ -46,6 +46,7 @@ We use 4 datasets from the [LLMGNN repository](https://github.com/CurryTang/LLMG
 | CORA          | 2,708    | 5,429    | Given the title and abstract, predict the category of this paper | Rule Learning, Neural Networks, Case-Based, Genetic Algorithms, Theory, Reinforcement Learning, Probabilistic Methods |
 | CITESEER      | 3,186    | 4,277    | Given the title and abstract, predict the category of this paper | Agents, Machine Learning, Information Retrieval, Database, Human Computer Interaction, Artificial Intelligence |
 | PUBMED        | 19,717   | 44,335   | Given the title and abstract, predict the category of this paper | Diabetes Mellitus Experimental, Diabetes Mellitus Type 1, Diabetes Mellitus Type 2 |
+| wiki-cs       | 11,701   | 43,1726  | Given the title and abstract, predict the category of this paper | Computational linguistics, Databases, Operating systems, Computer architecture, Computer security, Internet protocols, Computer file systems, Distributed computing architecture, Web technology, Programming language topics |
 | OGBN-Arxiv    | 169,343  | 2,315,598| Given the title and abstract, predict the category of this paper |40 classes from Arxiv CS |
 
 ### Dataset Setup
@@ -127,35 +128,17 @@ TAG_AD/
 └── README.md                   # This file
 ```
 
-## Key Features
+## Experiment
 
-### Anomaly Types
-- **Type 0**: No Anomaly (normal nodes)
-- **Type 1**: Dummy Anomaly (random text based on unigram distributions)
-- **Type 2**: LLM-Generated Contextual Anomaly (contextually inconsistent text)
+### Baseline experiment
 
-### Evaluation Metrics
-- ROC AUC Score
-- Average Precision
-- F1 Score
-- Precision@k
-- Recall@k
+generate 5% anomaly node for all datasets except  OGBN-Arxiv
 
-### Error Handling and Robustness
-- Comprehensive error handling for API calls
-- Input validation for all major functions
-- Device-aware tensor operations
-- Graceful handling of missing configuration
+Anomaly number:
+Cora = 135
+CITESEER = 159
+PUBMED = 986
+Wiki-CS = 585
 
-## Troubleshooting
 
-1. **Import Errors**: Ensure all dependencies are installed: `pip install -r requirements.txt`
-2. **OpenAI API Errors**: Check your API key in `config.yaml` and ensure you have credits
-3. **CUDA Errors**: The framework supports both CPU and GPU operations
-4. **Dataset Errors**: Verify dataset files are properly extracted in `data/raw/`
 
-## Security Note
-
-- Never commit API keys to version control
-- The `config.yaml` file is gitignored for security
-- Use environment variables for production deployments

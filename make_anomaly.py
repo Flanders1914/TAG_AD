@@ -12,12 +12,12 @@ def save_data(data: Data, data_dir: str, dataset_name: str, anomaly_type: int, a
     torch.save(data, file_path)
 
 if __name__ == "__main__":
-    dataset_name="cora_fixed_sbert"
-    n=100
+    dataset_name="pubmed_fixed_sbert"
+    n=986
     loader = LLMGNNDataLoader(data_dir="data/raw")
     data = loader.load_dataset(dataset_name, is_map_label=True)
-    anomaly_type = 4
-    k_neighbors = 2
+    anomaly_type = 2
+    k_neighbors = 3
     k = 50
     random_seed = 42
     if anomaly_type == 1:

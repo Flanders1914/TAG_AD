@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # python data/raw_data_loader.py --dataset cora_fixed_sbert
-# python data/raw_data_loader.py --dataset citeseer_fixed_sbert
+# python data/raw_data_loader.py --dataset citeseer2_fixed_sbert
 # python data/raw_data_loader.py --dataset pubmed_fixed_sbert
 # python data/raw_data_loader.py --dataset arxiv_fixed_sbert
+# python data/raw_data_loader.py --dataset wikics_fixed_sbert
 
 """
 Data Loader for LLMGNN Dataset Files
