@@ -7,7 +7,7 @@ CONFIG_PATH = "./config.yaml"
 DELAY_TIME = 1
 REQUEST_INTERVAL = 0.2
 
-def send_query_to_openai(user_prompt, system_prompt, model_name=None) -> str:
+def send_query_to_openai(user_prompt, system_prompt, model_name, api_key, temperature) -> str:
     """
     Send a query to OpenAI API and get the response
     """
@@ -15,7 +15,7 @@ def send_query_to_openai(user_prompt, system_prompt, model_name=None) -> str:
     while True:
         try:
             time.sleep(REQUEST_INTERVAL)
-            response = send_query(user_prompt, system_prompt, model_name)
+            response = send_query(user_prompt, system_prompt, model_name, api_key, temperature)
             retry_count = 0
             return response
         except Exception as e:
@@ -29,43 +29,24 @@ def send_query_to_openai(user_prompt, system_prompt, model_name=None) -> str:
             time.sleep(sleep_time)
 
 
-def send_query(user_prompt, system_prompt, model_name) -> str:
+def send_query(user_prompt, system_prompt, model_name, api_key, temperature) -> str:
     """
     Send a query to ChatGPT API and get the response
     """
-    try:
-        # get the api key, model, and temperature from config.yaml
-        with open(CONFIG_PATH, "r") as f:
-            config = yaml.safe_load(f)
-        api_key = config.get("OPENAI_KEY")
-        model = config.get("OPENAI_MODEL", "gpt-3.5-turbo")
-        temperature = config.get("TEMPERATURE", 0.7)
-        
-        # if model_name is provided, use the model_name
-        if model_name:
-            model = model_name
-
-        if not api_key:
-            raise ValueError("OPENAI_KEY not found in config.yaml")
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Config file not found: {CONFIG_PATH}")
-    except yaml.YAMLError as e:
-        raise ValueError(f"Error parsing config file: {e}")
-
     # send the query to OpenAI API
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {api_key}"
     }
     data = {
-        "model": model,
+        "model": model_name,
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
         "temperature": temperature
     }
-    print(f"Making API request with model: {model}")
+    print(f"Making API request with model: {model_name}")
     response = requests.post(
         "https://api.openai.com/v1/chat/completions",
         headers=headers,

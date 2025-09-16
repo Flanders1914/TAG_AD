@@ -218,6 +218,8 @@ test_bond.py
 
 # analysis
 count_node_neighbors.py
+test.py
 
-# gitignore
-.gitignore
+
+history_result/
+unsloth_compiled_cache/

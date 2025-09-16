@@ -1,0 +1,5002 @@
+[
+  {
+    "index": 2062,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1719,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2797,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2283,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 314,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2995,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 818,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 98,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 978,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1644,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2359,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2818,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2727,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1686,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2202,
+    "ground_truth": 1,
+    "prediction": 0.9
+  },
+  {
+    "index": 1040,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2176,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1824,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2967,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1158,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1762,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1384,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1913,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1522,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1403,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2553,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1022,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2960,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2064,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1758,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 7,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 361,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2540,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 722,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1279,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 684,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2900,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3015,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2731,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1299,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2439,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3111,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1626,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2870,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 186,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 969,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 145,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 833,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1157,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2170,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1435,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1339,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2972,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1060,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 263,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 390,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1388,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1124,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 226,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2093,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2241,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1567,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2749,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2592,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 167,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2443,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 890,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 652,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1027,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 727,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 324,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 592,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1423,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2932,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2071,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1723,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 756,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1704,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1920,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 74,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1642,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1296,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2369,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 996,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1336,
+    "ground_truth": 0,
+    "prediction": 0.7
+  },
+  {
+    "index": 1949,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2777,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 256,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 116,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1771,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 117,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1921,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1631,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2007,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2999,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 289,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1873,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 471,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 176,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1412,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3014,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1688,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 997,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 989,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2288,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3055,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1102,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 1881,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1992,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2132,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1525,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2156,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1874,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1486,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2685,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 951,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1337,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 801,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2537,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1065,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2937,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 509,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2046,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2049,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 33,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3011,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 775,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 828,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 99,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2673,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 4,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 30,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2918,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1825,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 299,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 539,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2445,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1583,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2388,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1012,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 126,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2235,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 264,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2539,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1338,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 305,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 414,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1116,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1602,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2515,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2058,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 785,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1213,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1670,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2724,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2701,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1799,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2171,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 530,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1368,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2506,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2300,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 71,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1217,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1308,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 927,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 1230,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 326,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1318,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1854,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 3062,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3112,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 2824,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1034,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1218,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 922,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2897,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 457,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 865,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 120,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1733,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1111,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2945,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 916,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1019,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2086,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 297,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 5,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3065,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1741,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 778,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 937,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1803,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1868,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1041,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2878,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 603,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2112,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2401,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1387,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1086,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3153,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2957,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1205,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 468,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3098,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1363,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2206,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1518,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1772,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 481,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2953,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2418,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3071,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1727,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 81,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3144,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 531,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1905,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2686,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2169,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 296,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1017,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2158,
+    "ground_truth": 1,
+    "prediction": 0.4
+  },
+  {
+    "index": 213,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1475,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2811,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 295,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 62,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 342,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 593,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 783,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 982,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2660,
+    "ground_truth": 0,
+    "prediction": 0.8
+  },
+  {
+    "index": 880,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2243,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2258,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2078,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2979,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1616,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 44,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1718,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1484,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 1983,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 3048,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 339,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 854,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2681,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 31,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2224,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 965,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 650,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1464,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2861,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 259,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2846,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 936,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1496,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2927,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1210,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 1847,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1589,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 132,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 544,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2139,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 624,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 505,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1498,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2801,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2812,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1383,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1863,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1506,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1946,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 792,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1923,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 940,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2477,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1592,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1535,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1523,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 249,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 702,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1690,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1876,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 2059,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 843,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3167,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1600,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 671,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3173,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 574,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2502,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 809,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1951,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1003,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 765,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 695,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 759,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3056,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1317,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2373,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2612,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1846,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1654,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2807,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2195,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2956,
+    "ground_truth": 0,
+    "prediction": 0.7
+  },
+  {
+    "index": 3122,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1202,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3030,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 688,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 665,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 743,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 870,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1244,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 683,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1418,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 514,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1956,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1188,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2504,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 977,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1478,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 685,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2322,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1814,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2175,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 770,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2362,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2817,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 933,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1097,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1947,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1790,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1580,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2113,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1866,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 896,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1161,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2710,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2463,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 484,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 660,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2398,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2859,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2189,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1404,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2549,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2757,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2451,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2613,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2914,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3148,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1492,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 209,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1853,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 995,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 675,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 201,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2154,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1208,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1665,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2180,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1287,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2547,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1625,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3017,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2143,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2449,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 605,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2164,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 214,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 24,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2047,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 15,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1789,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1687,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 281,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 397,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 243,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2688,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 548,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2652,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3086,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2330,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1035,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 374,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1651,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2595,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 440,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 385,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 168,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 271,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1835,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2510,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1080,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2465,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2177,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 848,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2896,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1958,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 190,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2237,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 204,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1328,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 710,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1934,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1271,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1683,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1137,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 964,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 466,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1115,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 68,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 408,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2222,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2711,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1349,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1826,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1851,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3182,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1751,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2308,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2864,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1025,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 984,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1838,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 29,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1549,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 197,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1149,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 529,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 986,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1321,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 395,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1005,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 380,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2717,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2566,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1750,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 37,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 950,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1927,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 608,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2875,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1935,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 357,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1479,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1077,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2406,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2338,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2366,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 187,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1472,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2294,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 910,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1954,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1907,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 447,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 166,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3166,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 401,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3028,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 403,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2823,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1113,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1182,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 1228,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2494,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2240,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2063,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2853,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1194,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1695,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 857,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 370,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 240,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2242,
+    "ground_truth": 1,
+    "prediction": 0.3
+  },
+  {
+    "index": 1055,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3113,
+    "ground_truth": 1,
+    "prediction": 0.3
+  },
+  {
+    "index": 2762,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1156,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1096,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 388,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1977,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1191,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2421,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 690,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2765,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 789,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1676,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1174,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2482,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 790,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 400,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2543,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1739,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 876,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1176,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1449,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1529,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 162,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 858,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 908,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2480,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1736,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 384,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2444,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1452,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1551,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1591,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1513,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 839,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2836,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1417,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 497,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 707,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1014,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1246,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1536,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 427,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 735,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2247,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3130,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2707,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2940,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 673,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1064,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 733,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1372,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1070,
+    "ground_truth": 1,
+    "prediction": 0.4
+  },
+  {
+    "index": 1808,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1229,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1759,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1562,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1542,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2849,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 587,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 291,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 832,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2769,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 258,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3158,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 835,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 429,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1016,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1356,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2121,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 846,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2211,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2442,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1389,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2044,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1618,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2148,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 990,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 534,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1007,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 814,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2583,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 913,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1811,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2379,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2186,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 579,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2943,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 602,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 2991,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1466,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2209,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2500,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1641,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 2756,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2548,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2963,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3024,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2736,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 47,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1380,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2207,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1574,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2774,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1083,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1216,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1820,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2784,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1872,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2559,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2012,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2881,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2635,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 424,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2810,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 849,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 341,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1181,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 125,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1783,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2214,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2837,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 279,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1167,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2858,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 1801,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 83,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 725,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 787,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1634,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 679,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 974,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1774,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 837,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2744,
+    "ground_truth": 1,
+    "prediction": 0.5
+  },
+  {
+    "index": 2804,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 566,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1303,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2075,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2456,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 537,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2691,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 35,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 874,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1738,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 421,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2287,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1454,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 211,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3106,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 350,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1617,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3010,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1125,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2623,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 230,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1123,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2414,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1829,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2129,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 58,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1248,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 11,
+    "ground_truth": 0,
+    "prediction": 0.7
+  },
+  {
+    "index": 387,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2969,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 59,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1223,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1997,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1931,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2228,
+    "ground_truth": 1,
+    "prediction": 0.9
+  },
+  {
+    "index": 1748,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 762,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 178,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 63,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1400,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 491,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 782,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 231,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2675,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2096,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3154,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 576,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2607,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1671,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1763,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2560,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2850,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1460,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1183,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 586,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 130,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2286,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 811,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 796,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3049,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1972,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 183,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 794,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1800,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3180,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2541,
+    "ground_truth": 0,
+    "prediction": 0.8
+  },
+  {
+    "index": 1039,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3170,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1886,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1301,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2887,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 110,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1049,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2828,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2345,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 411,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2473,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1635,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1432,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1610,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1807,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3044,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 1175,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 960,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1451,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1679,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2569,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 959,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 776,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2511,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1615,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 585,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2793,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 444,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1740,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 276,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 3078,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2017,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1822,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1611,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3117,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2029,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2802,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1311,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1830,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 267,
+    "ground_truth": 1,
+    "prediction": 0.4
+  },
+  {
+    "index": 736,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1533,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1304,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3146,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2311,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1668,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1713,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2201,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 682,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2732,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1620,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1987,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2464,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2745,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2838,
+    "ground_truth": 1,
+    "prediction": 0.9
+  },
+  {
+    "index": 21,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1657,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1348,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1839,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 147,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2486,
+    "ground_truth": 0,
+    "prediction": 0.7
+  },
+  {
+    "index": 2466,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2862,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3054,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2787,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1427,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1332,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2122,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1555,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1503,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1552,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1982,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 2098,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 135,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 755,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1386,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1249,
+    "ground_truth": 0,
+    "prediction": 0.8
+  },
+  {
+    "index": 2408,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2609,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 697,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1819,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2090,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 569,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 28,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1721,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2297,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1200,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3036,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2395,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2459,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1154,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1235,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1548,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 788,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2885,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1298,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2702,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 66,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 703,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 831,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2106,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2949,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2892,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 225,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2040,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2722,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1169,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2429,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2060,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1917,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2264,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 871,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 2048,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1264,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2281,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 626,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1399,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2669,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 988,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2091,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1209,
+    "ground_truth": 0,
+    "prediction": 0.7
+  },
+  {
+    "index": 2348,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 691,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2467,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2387,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 692,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2636,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3033,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 80,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 292,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1884,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2789,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1024,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2128,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1206,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 382,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 496,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1099,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2485,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1490,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2912,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 633,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1242,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2771,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 467,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1505,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 8,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 631,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 1971,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 207,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2759,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3001,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2203,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2304,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 611,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2478,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 415,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 742,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2629,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2841,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 260,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2230,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 2065,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1260,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1994,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 968,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 20,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 446,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 275,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 653,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1087,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2094,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1984,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1541,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2982,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1936,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 520,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2323,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2734,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2910,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1036,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2160,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2092,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 3043,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 663,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2249,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1155,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1779,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2998,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1485,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 826,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 612,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3019,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2894,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2142,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 662,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 3090,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 928,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 838,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2389,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2263,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2360,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 622,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 744,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 867,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 407,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1877,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1143,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1656,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2776,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1084,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 340,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1672,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1999,
+    "ground_truth": 1,
+    "prediction": 0.9
+  },
+  {
+    "index": 3110,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2507,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 779,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1468,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 2341,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 3013,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 129,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 409,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2073,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 1059,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2219,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 948,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 3088,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 3008,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1168,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2032,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1021,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2397,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1730,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 618,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 999,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1767,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1477,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1069,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1082,
+    "ground_truth": 0,
+    "prediction": 0.5
+  },
+  {
+    "index": 1889,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2877,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2484,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1190,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2391,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1693,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1037,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1566,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2933,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 723,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2133,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2832,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3184,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 393,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 581,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2259,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1424,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1352,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2608,
+    "ground_truth": 0,
+    "prediction": 0.6
+  },
+  {
+    "index": 191,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 255,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1334,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2141,
+    "ground_truth": 1,
+    "prediction": 0.5
+  },
+  {
+    "index": 1569,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 196,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1374,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2316,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2768,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 105,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 40,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 347,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1565,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1333,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 1076,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1074,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 1081,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 711,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 1061,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1614,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 353,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1006,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2274,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 866,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 142,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2329,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2806,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 148,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2248,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 358,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 205,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 2043,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2788,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 23,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 1961,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1491,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 1669,
+    "ground_truth": 1,
+    "prediction": 0.7
+  },
+  {
+    "index": 3074,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2152,
+    "ground_truth": 1,
+    "prediction": 0.5
+  },
+  {
+    "index": 111,
+    "ground_truth": 0,
+    "prediction": 0.4
+  },
+  {
+    "index": 1305,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 3119,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2975,
+    "ground_truth": 0,
+    "prediction": 0.1
+  },
+  {
+    "index": 2763,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2598,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 810,
+    "ground_truth": 0,
+    "prediction": 0.3
+  },
+  {
+    "index": 2229,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 2615,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 807,
+    "ground_truth": 1,
+    "prediction": 0.8
+  },
+  {
+    "index": 2011,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1361,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2187,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1959,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1028,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2578,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 2066,
+    "ground_truth": 0,
+    "prediction": 0.2
+  },
+  {
+    "index": 144,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 1678,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 3147,
+    "ground_truth": 0,
+    "prediction": 0.0
+  },
+  {
+    "index": 912,
+    "ground_truth": 1,
+    "prediction": 0.6
+  },
+  {
+    "index": 2651,
+    "ground_truth": 0,
+    "prediction": 0.1
+  }
+]

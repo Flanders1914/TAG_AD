@@ -56,14 +56,14 @@ def global_anomaly_generation_pipeline(data: Data, n: int, anomaly_type: int, ou
     gen = torch.Generator(device=normal_idxs.device).manual_seed(int(random_seed))
     perm = torch.randperm(normal_idxs.numel(), generator=gen, device=normal_idxs.device)
     selected_idxs = normal_idxs[perm[:n]]
-    # generate heuristic contextual anomaly
+    # generate global anomaly
     data = global_anomaly(data, selected_idxs, anomaly_type, outliner_texts, random_seed)
     # encode the text to embeddings
     data = encode_text(data)
     # The updated embeddings should be stored in data.updated_x
     return data
 
-# Dummy anomaly generation
+# Global anomaly generation
 def global_anomaly(data: Data, selected_idxs: torch.Tensor, anomaly_type: int, outliner_texts: List[str], random_seed: int) -> Data:
     """
     Generate global anomaly
@@ -83,7 +83,6 @@ def global_anomaly(data: Data, selected_idxs: torch.Tensor, anomaly_type: int, o
         rng = random.Random(seed)
         # sample a outliner text
         outliner_text = rng.choice(outliner_texts)
-        # replace the words with the words from the most distant node in randomly selected k nodes
         processed_text[idx] = outliner_text
         anomaly_labels[idx] = 1
         anomaly_types[idx] = anomaly_type
@@ -93,9 +92,9 @@ def global_anomaly(data: Data, selected_idxs: torch.Tensor, anomaly_type: int, o
             print(f"Generated {count} nodes")
             print("--------------------------------")
 
-    # step 4: update the data
+    # step 3: update the data
     data.processed_text = processed_text
     data.anomaly_labels = anomaly_labels
     data.anomaly_types = anomaly_types
-    print("Heuristic contextual anomaly generation completed")
+    print("Global anomaly generation completed")
     return data

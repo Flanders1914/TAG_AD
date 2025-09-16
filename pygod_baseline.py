@@ -1,5 +1,5 @@
 # use pygod framework to detect anomaly
-# python pygod_baseline.py --dataset_name cora_fixed_sbert_4_100 --output_file result/cora_fixed_sbert_4_100.json
+# l
 from data.raw_data_loader import LLMGNNDataLoader
 import torch
 from pygod.detector import AdONE, ANOMALOUS, AnomalyDAE, CoLA, CONAD, DMGD, DOMINANT, DONE, GAAN, GADNR, GAE, GUIDE, OCGNN, ONE, Radar, SCAN
@@ -18,7 +18,7 @@ def _to_float(x):
         return float(x.detach().cpu().item())
     return float(x)
 
-def prepare_data(data_dir: str, dataset_name: str) -> Data:
+def prepare_data(data_dir: str, dataset_name: str, is_structural: bool=False) -> Data:
     """
     Prepare the data for the baseline experiment
     """
@@ -27,33 +27,34 @@ def prepare_data(data_dir: str, dataset_name: str) -> Data:
     loader = LLMGNNDataLoader(data_dir=data_dir)
     data = loader.load_dataset(dataset_name, is_map_label=False)
 
-    # step 2: validate the anomaly by calculating the similarity
-    print("Validating anomaly...")
-    normal_similarity, anomaly_similarity = calculate_similarity(data)
-    print(f"Normal similarity: {normal_similarity}, Anomaly similarity: {anomaly_similarity}")
-
-    # step 3: update the data with the updated embeddings and anomaly labels
-    data.y = data.anomaly_labels.long()
-    data.x = data.updated_x
-    print("Unique labels in data.y:", torch.unique(data.y))
-    assert data.y.min() >= 0 and data.y.max() <= 1, \
-        f"Invalid labels found in y: {torch.unique(data.y)}"
-    assert data.y.dim() == 1 and data.y.size(0) == data.x.size(0), \
-        f"y shape mismatch: {data.y.shape} vs num_nodes={data.x.size(0)}"
-
-    # step 4: show some example
-    # Select two nodes where y == 1 and print its processed text
-    anomaly_indices = (data.y == 1).nonzero(as_tuple=True)[0]
-    print(f"Number of nodes with y == 1: {len(anomaly_indices)}")
-    if len(anomaly_indices) > 1:
-        idx = anomaly_indices[0].item()
-        print(f"Example 1: processed_text for node with y==1 (index {idx}):")
-        print(data.processed_text[idx])
-        idx = anomaly_indices[1].item()
-        print(f"Example 2: processed_text for node with y==1 (index {idx}):")
-        print(data.processed_text[idx])
+    if not is_structural:
+        # step 2: validate the anomaly by calculating the similarity
+        print("Validating anomaly...")
+        normal_similarity, anomaly_similarity = calculate_similarity(data)
+        print(f"Normal similarity: {normal_similarity}, Anomaly similarity: {anomaly_similarity}")
+        # step 3: update the data with the updated embeddings and anomaly labels
+        data.y = data.anomaly_labels.long()
+        data.x = data.updated_x
+        print("Unique labels in data.y:", torch.unique(data.y))
+        assert data.y.min() >= 0 and data.y.max() <= 1, \
+            f"Invalid labels found in y: {torch.unique(data.y)}"
+        assert data.y.dim() == 1 and data.y.size(0) == data.x.size(0), \
+            f"y shape mismatch: {data.y.shape} vs num_nodes={data.x.size(0)}"
+        # step 4: show some example
+        # Select two nodes where y == 1 and print its processed text
+        anomaly_indices = (data.y == 1).nonzero(as_tuple=True)[0]
+        print(f"Number of nodes with y == 1: {len(anomaly_indices)}")
+        if len(anomaly_indices) > 1:
+            idx = anomaly_indices[0].item()
+            print(f"Example 1: processed_text for node with y==1 (index {idx}):")
+            print(data.processed_text[idx])
+            idx = anomaly_indices[1].item()
+            print(f"Example 2: processed_text for node with y==1 (index {idx}):")
+            print(data.processed_text[idx])
+        else:
+            print("Less than 2 nodes with y == 1 found.")
     else:
-        print("Less than 2 nodes with y == 1 found.")
+        data.y = data.anomaly_labels.long()
 
     # step 5: clean the data
     print("Cleaning data...")
@@ -114,7 +115,6 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
     print("Running AdONE...")
     detector = AdONE(gpu=GPU)
     result['AdONE'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # ANOMALOUS
     print("Running ANOMALOUS...")
@@ -126,37 +126,32 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
     print("Running AnomalyDAE...")
     detector = AnomalyDAE(gpu=GPU)
     result['AnomalyDAE'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # CoLA
     print("Running CoLA...")
     detector = CoLA(gpu=GPU)
     result['CoLA'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # CONAD
     print("Running CONAD...")
     detector = CONAD(gpu=GPU)
     result['CONAD'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # DMGD
-    print("Running DMGD...")
-    detector = DMGD(gpu=-1) 
-    result['DMGD'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
+    #print("Running DMGD...")
+    #detector = DMGD(gpu=-1) 
+    #result['DMGD'] = train_and_evaluate(data.clone(), detector, k)
+    #torch.cuda.empty_cache()
 
     # DOMINANT
     print("Running DOMINANT...")
     detector = DOMINANT(gpu=GPU)
     result['DOMINANT'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # DONE
     print("Running DONE...")
     detector = DONE(gpu=GPU)
     result['DONE'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # GAAN
     #print("Running GAAN...")
@@ -174,7 +169,6 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
     print("Running GAE...")
     detector = GAE(gpu=GPU)
     result['GAE'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # GUIDE
     #print("Running GUIDE...")
@@ -186,13 +180,11 @@ def baseline_experiment(data: Data, k: int, random_seed: int) -> dict:
     print("Running OCGNN...")
     detector = OCGNN(gpu=GPU)
     result['OCGNN'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
 
     # ONE
     print("Running ONE...")
     detector = ONE(gpu=GPU)
     result['ONE'] = train_and_evaluate(data.clone(), detector, k)
-    torch.cuda.empty_cache()
     
     # Radar
     print("Running Radar...")
@@ -236,15 +228,18 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', type=str, default='data/generated')
-    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert_1_100')
+    parser.add_argument('--dataset_name', type=str, default='cora_fixed_sbert_2_135')
     parser.add_argument('--random_seed', type=int, default=42)
     parser.add_argument('--experiment_num', type=int, default=1)
     parser.add_argument('--output_file', type=str, default='results.json')
     parser.add_argument('--k', type=int, default=20, help='Number of top-k anomalies for precision and recall calculation')
+    parser.add_argument('--is_structural', type=bool, default=False, help='Whether the dataset is structural anomaly')
     args = parser.parse_args()
     
     # prepare the data
-    data = prepare_data(args.data_dir, args.dataset_name)
+
+    data = prepare_data(args.data_dir, args.dataset_name, args.is_structural)
+
 
     # run the baseline experiment for multiple times
     results = []

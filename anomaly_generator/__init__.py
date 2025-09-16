@@ -2,5 +2,6 @@ from .dummy_anomaly import dummy_anomaly_generator
 from .LLM_contextual_anomaly import llm_generated_contextual_anomaly_generator
 from .anomaly_list import ANOMALY_TYPE_LIST
 from .heuristic_contextual_anomaly import heuristic_contextual_anomaly_generator
+from .structural_anomaly import structural_anomaly_generator
 from .global_anomaly import global_anomaly_generator
-__all__ = ["dummy_anomaly_generator", "llm_generated_contextual_anomaly_generator", "heuristic_contextual_anomaly_generator", "global_anomaly_generator", "ANOMALY_TYPE_LIST"]
+__all__ = ["dummy_anomaly_generator", "llm_generated_contextual_anomaly_generator", "heuristic_contextual_anomaly_generator", "global_anomaly_generator", "structural_anomaly_generator", "ANOMALY_TYPE_LIST"]
