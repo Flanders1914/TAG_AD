@@ -1,0 +1,9 @@
+A mixed anomaly node exhibits one or more of the following characteristics:  
+1) **Contextual inconsistency**: The textual attributes of the node deviate significantly from the semantic patterns observed in its direct neighbors.  
+2) **Structural irregularity**: The connectivity or structural role of the node within the 2-hop subgraph is inconsistent with the expected topology, such as unusual edge density, centrality, or community membership.  
+3) **Cross-modal mismatch**: There is a notable inconsistency between the textual attributes and the structural context, indicating a misalignment between the node's content and its position in the graph.  
+
+You should analyze each of the above characteristics from the following aspects:  
+1) **Node-level context**: Examine the textual attributes of the target node and compare them to the aggregated semantic features of its direct neighbors to identify deviations .  
+2) **Subgraph structural consistency**: Evaluate the role of the node within its 2-hop subgraph, assessing metrics such as centrality, clustering coefficient, and edge patterns relative to neighboring nodes .  
+3) **Cross-modal alignment**: Identify mismatches between the node's textual attributes and its structural position, focusing on cases where the node's content does not align with its connectivity within the graph .  

@@ -1,0 +1,9 @@
+A structural anomaly node exhibits one or more of the following characteristics:  
+1) **Abnormal connectivity patterns**: The node participates in unexpected structures, such as fully connected small cliques, which deviate from the general network structure .  
+2) **Irregular local subgraph density**: The density of connections in the 2-hop subgraph surrounding the node is significantly higher or lower than the typical density observed in the network .  
+3) **Deviations from multiscale structural contexts**: The node’s structural role within its local, community, or global context differs significantly from expected patterns in attributed networks .  
+
+You should analyze each of the above characteristics from the following aspects:  
+1) **2-hop subgraph structure analysis**: Assess the connectivity and density of the 2-hop subgraph, focusing on patterns like cliques or sparse connections inconsistent with the larger network .  
+2) **Comparison with local structural norms**: Evaluate how the node’s subgraph deviates from the structural norms of its local or hierarchical context, considering multiscale anomalies .  
+3) **Scalability considerations**: Ensure the analysis remains efficient and scalable, given the model's focus on linear complexity with respect to the number of edges .  

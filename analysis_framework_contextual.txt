@@ -1,0 +1,10 @@
+A contextual anomaly node exhibits one or more of the following characteristics:  
+1) **Textual inconsistency**: The content of the target node's text significantly deviates in semantic meaning or contextual alignment from that of its direct neighbors .  
+2) **Cross-modal inconsistency**: The semantic information derived from the textual attributes of the target node is misaligned with the structural context provided by its neighbors in the graph .  
+
+You should analyze each of the above characteristics from the following aspects:  
+1) **Semantic deviation**: Evaluate the extent to which the target node’s text differs from its neighbors by identifying notable shifts in tone, topic, or key terms .  
+2) **Contextual alignment**: Assess whether the text of the target node supports or conflicts with the broader thematic or relational context established by the direct neighbors .  
+3) **Local inconsistency**: Measure the degree of similarity or dissimilarity between the target node's text and its neighbors using qualitative or inferred relationships based on contextual relevance .  
+
+The analysis should focus on identifying patterns of semantic and contextual misalignment that may signify an anomaly, guided by the provided rubric for scoring .  
