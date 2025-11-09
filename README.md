@@ -21,19 +21,13 @@ git clone git@github.com:Flanders1914/TAG_AD.git
 cd TAG_AD
 ```
 
-### Configuration
-
-1. **OpenAI API Setup** (for LLM-based anomaly generation):
-   - Copy your OpenAI API key
-   - Edit `config.yaml` and replace `"your_openai_api_key_here"` with your actual API key
-   - Adjust model and temperature settings as needed
-2. **Export API key**
-   ```bash
-   export OPENAI_API_KEY="OPENAI_API_KEY"
-   export DEEPINFRA_API_KEY="DEEPINFRA_API_KEY"
-   export DEEPSEEK_API_KEY="DEEPSEEK_API_KEY"
-   export TEMPERATURE=0
-   ```
+### API Configuration
+```bash
+export OPENAI_API_KEY="OPENAI_API_KEY"
+export DEEPINFRA_API_KEY="DEEPINFRA_API_KEY"
+export DEEPSEEK_API_KEY="DEEPSEEK_API_KEY"
+export TEMPERATURE=0
+```
 
 ## Datasets
 
