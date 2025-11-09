@@ -14,13 +14,6 @@ conda activate ad_env
 pip install -r requirements.txt
 ```
 
-### Clone and Setup
-
-```bash
-git clone git@github.com:Flanders1914/TAG_AD.git
-cd TAG_AD
-```
-
 ### API Configuration
 ```bash
 export OPENAI_API_KEY="OPENAI_API_KEY"
