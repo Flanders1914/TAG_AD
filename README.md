@@ -24,7 +24,7 @@ export TEMPERATURE=0
 
 ## Datasets
 
-We use the following 5 datasets from [LLMGNN repository](https://github.com/CurryTang/LLMGNN/tree/master)
+We use the following 4 datasets from [LLMGNN repository](https://github.com/CurryTang/LLMGNN/tree/master)
 
 ### Dataset Statistics
 
@@ -34,7 +34,6 @@ We use the following 5 datasets from [LLMGNN repository](https://github.com/Curr
 | CITESEER      | 3,186    | 4,277    | Given the title and abstract, predict the category of this paper | Agents, Machine Learning, Information Retrieval, Database, Human Computer Interaction, Artificial Intelligence |
 | PUBMED        | 19,717   | 44,335   | Given the title and abstract, predict the category of this paper | Diabetes Mellitus Experimental, Diabetes Mellitus Type 1, Diabetes Mellitus Type 2 |
 | wiki-cs       | 11,701   | 43,1726  | Given the title and abstract, predict the category of this paper | Computational linguistics, Databases, Operating systems, Computer architecture, Computer security, Internet protocols, Computer file systems, Distributed computing architecture, Web technology, Programming language topics |
-| OGBN-Arxiv    | 169,343  | 2,315,598| Given the title and abstract, predict the category of this paper |40 classes from Arxiv CS |
 
 ### Dataset Setup
 
